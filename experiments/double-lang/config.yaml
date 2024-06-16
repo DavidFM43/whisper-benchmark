@@ -1,0 +1,7 @@
+audio_file: audio-files/audio_only-audio_0.m4a
+output_dir: experiments/double-lang
+batch_size: 24
+attn_implementation: sdpa
+fp16: true
+chunk_length_s: 30
+model_name: openai/whisper-large-v3

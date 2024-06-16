@@ -1,0 +1,26 @@
+I20240523 22:48:32 415514 benchmark benchmark_whisper.py:93] attn_implementation: eager
+audio_file: audio-files/Finance Meeting for April 20 2020.mp3
+batch_size: 24
+chunk_length_s: 30
+fp16: True
+model_name: distil-whisper/distil-large-v3
+output_dir: experiments/atth_impl/eager
+I20240523 22:48:32 415514 benchmark benchmark_whisper.py:76] audio_file: audio-files/Finance Meeting for April 20 2020.mp3
+output_dir: experiments/atth_impl/eager
+batch_size: 24
+attn_implementation: eager
+fp16: true
+chunk_length_s: 30
+model_name: distil-whisper/distil-large-v3
+
+W20240523 22:48:32 415514 py.warnings warnings.py:109] /home/dmorara/miniconda3/envs/whisper/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+I20240523 22:48:51 415514 benchmark benchmark_whisper.py:105] Length of the interview in seconds: 9202
+I20240523 22:48:51 415514 benchmark benchmark_whisper.py:156] Loading model: distil-whisper/distil-large-v3
+W20240523 22:48:51 415514 py.warnings warnings.py:109] /home/dmorara/miniconda3/envs/whisper/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+I20240523 22:49:50 415514 benchmark benchmark_whisper.py:187] Transcription time: 56 seconds
+I20240523 22:49:50 415514 benchmark benchmark_whisper.py:188] Seconds transcribed per second: 163.25641724308875
+I20240523 22:49:50 415514 benchmark benchmark_whisper.py:189] Total time elapsed: 78 seconds

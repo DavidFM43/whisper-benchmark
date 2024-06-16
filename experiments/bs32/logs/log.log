@@ -1,0 +1,16 @@
+I20240527 20:36:44 1215497 benchmark benchmark_whisper.py:81] audio_file: audio-files/Finance Meeting for April 20 2020.mp3
+output_dir: experiments/bs32
+batch_size: 32
+attn_implementation: sdpa
+fp16: false
+chunk_length_s: 30
+model_name: openai/whisper-large-v3
+
+W20240527 20:36:44 1215497 py.warnings warnings.py:109] /home/dmorara/miniconda3/envs/whisper/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+I20240527 20:37:03 1215497 benchmark benchmark_whisper.py:112] Length of the interview in seconds: 9202
+I20240527 20:37:03 1215497 benchmark benchmark_whisper.py:163] Loading model: openai/whisper-large-v3
+W20240527 20:37:03 1215497 py.warnings warnings.py:109] /home/dmorara/miniconda3/envs/whisper/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+

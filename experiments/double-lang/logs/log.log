@@ -1,0 +1,23 @@
+I20240523 22:37:44 414391 benchmark benchmark_whisper.py:93] attn_implementation: sdpa
+audio_file: audio-files/audio_only-audio_0.m4a
+batch_size: 24
+chunk_length_s: 30
+fp16: True
+model_name: openai/whisper-large-v3
+output_dir: experiments/double-lang
+I20240523 22:37:44 414391 benchmark benchmark_whisper.py:76] audio_file: audio-files/audio_only-audio_0.m4a
+output_dir: experiments/double-lang
+batch_size: 24
+attn_implementation: sdpa
+fp16: true
+chunk_length_s: 30
+model_name: openai/whisper-large-v3
+
+W20240523 22:37:44 414391 py.warnings warnings.py:109] /home/dmorara/miniconda3/envs/whisper/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+I20240523 22:37:45 414391 benchmark benchmark_whisper.py:105] Length of the interview in seconds: 239
+I20240523 22:37:45 414391 benchmark benchmark_whisper.py:156] Loading model: openai/whisper-large-v3
+W20240523 22:37:45 414391 py.warnings warnings.py:109] /home/dmorara/miniconda3/envs/whisper/lib/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+

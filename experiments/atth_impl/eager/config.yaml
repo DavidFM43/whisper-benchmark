@@ -1,0 +1,7 @@
+audio_file: audio-files/Finance Meeting for April 20 2020.mp3
+output_dir: experiments/atth_impl/eager
+batch_size: 24
+attn_implementation: eager
+fp16: true
+chunk_length_s: 30
+model_name: distil-whisper/distil-large-v3

@@ -1,0 +1,7 @@
+audio_file: audio-files/Finance Meeting for April 20 2020.mp3
+output_dir: experiments/bs32
+batch_size: 32
+attn_implementation: sdpa
+fp16: false
+chunk_length_s: 30
+model_name: openai/whisper-large-v3

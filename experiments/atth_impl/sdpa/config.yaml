@@ -1,0 +1,7 @@
+audio_file: Finance Meeting for April 20 2020.mp3
+output_dir: atth_impl_exp/distil-large-bs24-sdpa-fp16-150min
+batch_size: 24
+attn_implementation: sdpa
+fp16: true
+chunk_length_s: 30
+model_name: distil-whisper/distil-large-v3
