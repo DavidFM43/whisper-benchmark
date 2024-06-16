@@ -63,6 +63,11 @@ def get_arg_parser(description: str):
         type=str,
         help="Whisper model name.",
     )
+    parser.add_argument(
+        "--task",
+        type=str,
+        help="Whisper model name.",
+    )
 
     return parser
 
@@ -98,7 +103,6 @@ def setup(args):
 
     fix_random_seeds(seed)
 
-    cfg.pop("config_file")
     write_config(cfg, args.output_dir)
 
     return cfg
@@ -185,7 +189,7 @@ def main(args):
         chunk_length_s=cfg.chunk_length_s,
         batch_size=cfg.batch_size,
         return_timestamps=True,
-        generate_kwargs={"task": "translate"},
+        generate_kwargs={"task": args.task},
     )
     transcription_time = time.time() - transcription_time
     total_time = time.time() - total_time
@@ -200,8 +204,11 @@ def main(args):
     outputs["seconds_transcribed_per_second"] = seconds_transcribed_per_second
 
     # save transcription
-    with open(os.path.join(args.output_dir, "outputs.json"), "w") as json_file:
-        json.dump(outputs, json_file, indent=4)
+    with open(os.path.join(args.output_dir, "outputs.json"), "w", encoding="utf-8") as json_file:
+        json.dump(outputs, json_file, ensure_ascii=False, indent=4)
+
+    with open(os.path.join(args.output_dir, "text.txt"), "w", encoding="utf-8") as f:
+        f.write(outputs["text"])
 
 
 if __name__ == "__main__":
